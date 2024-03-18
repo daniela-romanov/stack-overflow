@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { SignedIn, UserButton} from '@clerk/clerk-react'
+import Theme from './Theme'
 
 
 
@@ -18,7 +19,7 @@ const Navbar = () => {
       </Link>
         Global Search
         <div className='flex-between gap-5'>
-            Theme
+            <Theme />
             <SignedIn> 
             <UserButton afterSignOutUrl="/" 
             appearance={{
