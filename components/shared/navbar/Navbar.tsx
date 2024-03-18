@@ -6,6 +6,7 @@ import React from 'react'
 import { SignedIn, UserButton} from '@clerk/clerk-react'
 import Theme from './Theme'
 import MobileNav from './MobileNav'
+import GlobalSearch from '../search/GlobalSearch'
 
 
 
@@ -18,7 +19,7 @@ const Navbar = () => {
            />
            <p className='h2-bold font-spaceGrotesk text-dark-100 dark:text-light-900 max-sm:hidden'>Dev <span className='text-primary-500'>Overflow</span></p>
       </Link>
-        Global Search
+        <GlobalSearch />
         <div className='flex-between gap-5'>
             <Theme />
             <SignedIn> 
